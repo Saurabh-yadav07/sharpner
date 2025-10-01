@@ -1,31 +1,12 @@
-// Write the code as shown in the video below:
-const mainHeading = document.querySelector("#main-heading");
-mainHeading.style.textAlign = "center";
-const fruits = document.querySelector(".fruits");
-fruits.style.backgroundColor = "gray";
-fruits.style.padding = "30px";
-fruits.style.margin = "30px";
-fruits.style.width = "50%";
-fruits.style.borderRadius = "5px";
-fruits.style.listStyleType = "none";
+// Write your code below:
+const header = document.querySelector("#header");
+const subHeading = document.createElement("h3");
+subHeading.textContent = "Buy high quality organic fruits online";
+subHeading.style.fontStyle = "italic";
+header.appendChild(subHeading);
 
-const fruitItems = document.querySelectorAll(".fruit");
-for (let i = 0; i < fruitItems.length; i++){
-    fruitItems[i].style.backgroundColor = "white";
-    fruitItems[i].style.padding = "10px";
-    fruitItems[i].style.margin = "10px";
-    fruitItems[i].style.borderRadius = "5px";
-}
-const oddFruitItems = document.querySelectorAll(".fruit:nth-child(odd)");
-for (let i = 0; i < oddFruitItems.length; i++){
-    oddFruitItems[i].style.backgroundColor = "lightgray";
-}
-
-// Write answer to the questions asked below:
-const basketHeading = document.querySelector("#basket-heading");
-basketHeading.style.color = "brown";
-const evenFruitItems = document.querySelectorAll(".fruit:nth-child(even)");
-for (let i = 0; i < evenFruitItems.length; i++){
-    evenFruitItems[i].style.backgroundColor = "brown";
-    evenFruitItems[i].style.color = "white";
-}
+const fruitList = document.querySelector(".fruits");
+const para = document.createElement("p");
+para.textContent = "Total fruits:4";
+para.id = "fruits-total";
+fruitList.before(para);
