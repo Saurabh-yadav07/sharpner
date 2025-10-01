@@ -1,6 +1,31 @@
-// Write your code below:
-let list = document.getElementsByTagName("li");
-list[4].style.color = "blue";
-for (let i = 0; i < list.length; i++){
-    list[i].style.fontStyle = "italic";
+// Write the code as shown in the video below:
+const mainHeading = document.querySelector("#main-heading");
+mainHeading.style.textAlign = "center";
+const fruits = document.querySelector(".fruits");
+fruits.style.backgroundColor = "gray";
+fruits.style.padding = "30px";
+fruits.style.margin = "30px";
+fruits.style.width = "50%";
+fruits.style.borderRadius = "5px";
+fruits.style.listStyleType = "none";
+
+const fruitItems = document.querySelectorAll(".fruit");
+for (let i = 0; i < fruitItems.length; i++){
+    fruitItems[i].style.backgroundColor = "white";
+    fruitItems[i].style.padding = "10px";
+    fruitItems[i].style.margin = "10px";
+    fruitItems[i].style.borderRadius = "5px";
+}
+const oddFruitItems = document.querySelectorAll(".fruit:nth-child(odd)");
+for (let i = 0; i < oddFruitItems.length; i++){
+    oddFruitItems[i].style.backgroundColor = "lightgray";
+}
+
+// Write answer to the questions asked below:
+const basketHeading = document.querySelector("#basket-heading");
+basketHeading.style.color = "brown";
+const evenFruitItems = document.querySelectorAll(".fruit:nth-child(even)");
+for (let i = 0; i < evenFruitItems.length; i++){
+    evenFruitItems[i].style.backgroundColor = "brown";
+    evenFruitItems[i].style.color = "white";
 }
